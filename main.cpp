@@ -10,7 +10,7 @@ int main(){
 		sprintf_s(imgpath, "E:\\ÏîÄ¿\\¹èÆ¬¼ì²â\\ÏßºÛ¼ì²â\\Image\\6.13\\9-%d.bmp", name);
 		cout << imgpath << endl;
 		Mat src = imread(imgpath, 0);
-		process(src,  thresholdvalue, thresh_distance, finalresult);
+		int a = process(src,  thresholdvalue, thresh_distance, finalresult);
 	}
 	return 1;
 }

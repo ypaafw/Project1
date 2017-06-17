@@ -22,7 +22,7 @@ float distance_point2lines(Point p, Vec2f lp);
 * @variance the variance of distance
 * @BelongToID  the segment belong to which lines
 */
-struct linesegment
+extern"C"_declspec(dllexport) struct linesegment
 {
 	vector<Point3f> ls;
 	float meanvalue;
@@ -95,7 +95,7 @@ float theta_standard[];
 /*
 * singleimprint record these linesegments belong to the same class 
 */
-struct singleimprint{
+extern"C"_declspec(dllexport)struct singleimprint{
 	vector<linesegment> LineSegment;
 	int BelongID;
 	Vec4f linefun;
@@ -109,5 +109,6 @@ bool SortByLineSegment_Y(singleimprint a, singleimprint b);
 @src the input image
 @thersholdvalue the binaryzation thershold value, transfrom gray image to black-white image
 @thresh_distance the threshold of difference value which the distance of the point deviate from center lines, compareing to the average distance from point to center lines
+@finalresult  return a vector composed of struct singleimprint
 */
-int process(Mat src, float thresholdvalue, float thresh_distance, vector<singleimprint> &finalresult);
+extern"C"_declspec(dllexport)  int process(Mat src, float thresholdvalue, float thresh_distance, vector<singleimprint> &finalresult);

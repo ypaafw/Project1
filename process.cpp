@@ -364,7 +364,5 @@ int process(Mat src, float thresholdvalue, float thresh_distance, vector<singlei
 	imshow("content", showimg);
 	imwrite("content.bmp", showimg);
 	waitKey();
-
-	system("pause");
 	return 1;
 }

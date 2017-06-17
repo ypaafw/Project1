@@ -35,10 +35,10 @@
     <ClCompile Include="filter.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="process.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="lightlines.cpp">
+    <ClCompile Include="process.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

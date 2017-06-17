@@ -125,8 +125,8 @@
   <ItemGroup>
     <ClCompile Include="enhanceImage.cpp" />
     <ClCompile Include="filter.cpp" />
-    <ClCompile Include="lightlines.cpp" />
     <ClCompile Include="process.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
