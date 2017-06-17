@@ -110,4 +110,4 @@ bool SortByLineSegment_Y(singleimprint a, singleimprint b);
 @thersholdvalue the binaryzation thershold value, transfrom gray image to black-white image
 @thresh_distance the threshold of difference value which the distance of the point deviate from center lines, compareing to the average distance from point to center lines
 */
-int process(Mat src, float thresholdvalue, float thresh_distance);
+int process(Mat src, float thresholdvalue, float thresh_distance, vector<singleimprint> &finalresult);
