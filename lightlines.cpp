@@ -209,7 +209,9 @@ int lightlines(Mat src, vector<Information> &LineInformation, float thresh_dista
 	return 1;
 }
  
-
+bool SortByLineSegment_Y(singleimprint a, singleimprint b){
+	return a.LineSegment[0].ls[0].y < b.LineSegment[0].ls[0].y;
+}
 /**
 * k 各个栅线直线的斜率
 * b 各个栅线直线的截距

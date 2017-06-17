@@ -101,5 +101,6 @@ struct singleimprint{
 	Vec4f linefun;
 };
 /*
-* statisticresult record all imprint and their line function
+* SortByLineSegment_Y
 */
+bool SortByLineSegment_Y(singleimprint a, singleimprint b);

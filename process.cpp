@@ -147,6 +147,8 @@ int main(){
 				finalresult.push_back(finalresult2[i]);
 			}
 		}
+		//----------对同属一条线痕的线段进行排序，按照y轴方向进行排序----------------------
+		sort(finalresult.begin(), finalresult.end(), SortByLineSegment_Y);
 		for (int i = 0; i < finalresult.size(); i++){
 			cout << "线痕编号为："<<finalresult[i].BelongID<<" ,线痕位置："<<finalresult[i].LineSegment[0].ls[0]<<" , 线痕长度为："
 				<<finalresult[i].LineSegment[0].ls.size()<<" , 线痕凸起高度为："<< finalresult[i].LineSegment[0].meanvalue<< endl;
